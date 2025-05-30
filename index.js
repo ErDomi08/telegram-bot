@@ -9,6 +9,7 @@ if (!token) {
 }
 
 // Crea una nuova istanza del bot
+
 const bot = new TelegramBot(token, { polling: true });
 
 // Gestisci il comando /start
