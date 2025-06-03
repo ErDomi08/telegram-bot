@@ -51,7 +51,7 @@ Link per il tris : https://erdomi08.github.io/tris-game/
 bot.onText(/\/memory/, (msg) => {
   const chatId = msg.chat.id;
   bot.sendMessage(chatId, `
-Link per il memory: https://erdomi08.github.io/Corso_conteiner/
+Link per il memory: https://erdomi08.github.io/memory-game/
 `);
 });
 
