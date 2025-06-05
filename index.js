@@ -75,7 +75,7 @@ bot.on('message', (msg) => {
 const axios = require('axios');
 
 setInterval(() => {
-  axios.get('https://tuo-bot.onrender.com')
+  axios.get('https://telegram-bot.onrender.com')
     .then(() => console.log('Ping inviato per mantenere attivo il bot'))
     .catch(err => console.error('Errore nel ping:', err));
 }, 9 * 60 * 1000); // Ogni 9 minuti
