@@ -72,4 +72,12 @@ bot.on('message', (msg) => {
   bot.sendMessage(chatId, 'Non ho capito. Usa /help per vedere i comandi disponibili.');
 });
 
+const axios = require('axios');
+
+setInterval(() => {
+  axios.get('https://tuo-bot.onrender.com')
+    .then(() => console.log('Ping inviato per mantenere attivo il bot'))
+    .catch(err => console.error('Errore nel ping:', err));
+}, 9 * 60 * 1000); // Ogni 9 minuti
+
 console.log('Bot avviato con successo!');
